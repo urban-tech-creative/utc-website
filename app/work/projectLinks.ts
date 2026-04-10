@@ -1,6 +1,7 @@
 import type { NavLinkItem } from '@/components/Nav/types';
 
 export const workProjectLinks: NavLinkItem[] = [
+  { href: '/work/sipswich', label: "Sip'Swich", icon: 'paintbrush' },
   { href: '/work/trailmakers', label: 'Trailmakers', icon: 'paintbrush' },
   { href: '/work/sammys-christmas-adventure', label: "Sammy's Christmas Adventure", icon: 'paintbrush' },
   { href: '/work/bt-manufacturing-showcase', label: 'BT Manufacturing Showcase', icon: 'paintbrush' },
