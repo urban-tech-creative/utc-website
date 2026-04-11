@@ -27,7 +27,11 @@ export type CollaboratorBioHeaderGradient =
   | 'theme-magenta-theme-orange'
   | 'theme-magenta-theme-purple'
   | 'theme-magenta-theme-cyan'
-  | 'theme-magenta-theme-green';
+  | 'theme-magenta-theme-green'
+  | 'theme-orange-theme-yellow'
+  | 'theme-yellow-theme-orange'
+  | 'theme-magenta-theme-yellow'
+  | 'theme-yellow-theme-magenta';
 
 export type CollaboratorBioImageBackgroundSolid =
   | 'theme-orange'
@@ -77,6 +81,10 @@ const HEADER_GRADIENT_CLASS: Record<CollaboratorBioHeaderGradient, string> = {
   'theme-magenta-theme-purple': 'bg-linear-to-r from-theme-magenta to-theme-purple',
   'theme-magenta-theme-cyan': 'bg-linear-to-r from-theme-magenta to-theme-cyan',
   'theme-magenta-theme-green': 'bg-linear-to-r from-theme-magenta to-theme-green',
+  'theme-orange-theme-yellow': 'bg-linear-to-r from-theme-orange to-theme-yellow',
+  'theme-yellow-theme-orange': 'bg-linear-to-r from-theme-yellow to-theme-orange',
+  'theme-magenta-theme-yellow': 'bg-linear-to-r from-theme-magenta to-theme-yellow',
+  'theme-yellow-theme-magenta': 'bg-linear-to-r from-theme-yellow to-theme-magenta',
 };
 
 const IMAGE_BACKGROUND_CLASS: Record<CollaboratorBioImageBackground, string> = {

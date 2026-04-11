@@ -3,6 +3,7 @@
 :root {
   --theme-cyan: #68E3E8;
   --theme-orange: #FBB006;
+  --theme-yellow: #FFE500;
   --theme-purple: #443BFF;
   --theme-black: #012031;
   --theme-magenta: #F849C1;
@@ -19,6 +20,7 @@
 @theme inline {
   --color-theme-cyan: var(--theme-cyan);
   --color-theme-orange: var(--theme-orange);
+  --color-theme-yellow: var(--theme-yellow);
   --color-theme-purple: var(--theme-purple);
   --color-theme-black: var(--theme-black);
   --color-theme-magenta: var(--theme-magenta);

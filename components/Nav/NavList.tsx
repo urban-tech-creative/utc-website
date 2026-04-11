@@ -58,7 +58,7 @@ export default function NavList({
             <NavLink
               href={link.href}
               label={link.label}
-              icon={link.icon}
+              icons={link.icons}
               onClick={onLinkClick}
               size={size}
               frameBorderSides={

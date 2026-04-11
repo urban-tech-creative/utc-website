@@ -41,7 +41,7 @@ export const Work: Story = {
   args: {
     href: workLink.href,
     label: workLink.label,
-    icon: workLink.icon,
+    icons: workLink.icons,
     size: 'desktop',
   },
 };
@@ -50,7 +50,7 @@ export const XR: Story = {
   args: {
     href: xrLink.href,
     label: xrLink.label,
-    icon: xrLink.icon,
+    icons: xrLink.icons,
     size: 'desktop',
   },
 };
@@ -59,7 +59,7 @@ export const News: Story = {
   args: {
     href: newsLink.href,
     label: newsLink.label,
-    icon: newsLink.icon,
+    icons: newsLink.icons,
     size: 'desktop',
   },
 };
@@ -68,7 +68,7 @@ export const About: Story = {
   args: {
     href: aboutLink.href,
     label: aboutLink.label,
-    icon: aboutLink.icon,
+    icons: aboutLink.icons,
     size: 'desktop',
   },
 };
@@ -77,7 +77,7 @@ export const Contact: Story = {
   args: {
     href: contactLink.href,
     label: contactLink.label,
-    icon: contactLink.icon,
+    icons: contactLink.icons,
     size: 'desktop',
   },
 };

@@ -11,8 +11,8 @@ const DEFAULT_FRAME_BORDER_SIDES: readonly FrameBorderSide[] = ['top', 'right', 
 export interface NavLinkProps {
   href: string;
   label: string;
-  /** Section icon displayed at the start of the link. */
-  icon: IconName;
+  /** Section icons displayed at the start of the link. 1–3 icons shown side by side. */
+  icons: IconName[];
   onClick?: () => void;
   /** Determines sizing of text and icon. */
   size: 'mobile' | 'desktop';
@@ -28,7 +28,7 @@ export interface NavLinkProps {
 export default function NavLink({
   href,
   label,
-  icon,
+  icons,
   onClick,
   size,
   frameBorderSides = DEFAULT_FRAME_BORDER_SIDES,
@@ -46,11 +46,14 @@ export default function NavLink({
     'group-hover:bg-theme-cyan transition-colors duration-200',
   );
 
+  const iconBoxWidth = size === 'mobile'
+    ? (icons.length === 1 ? 'w-18' : icons.length === 2 ? 'w-24' : 'w-28')
+    : (icons.length === 1 ? 'w-10' : icons.length === 2 ? 'w-14' : 'w-16');
+
   const iconStyles = clsx(
-    'flex items-center justify-center box-border shrink-0',
+    'flex flex-row items-center justify-center gap-1 box-border shrink-0',
     'h-full',
-    size === 'mobile' && 'w-18',
-    size === 'desktop' && 'w-10',
+    iconBoxWidth,
     'bg-theme-black text-theme-white',
     'group-hover:bg-theme-cyan group-hover:text-theme-black transition-colors duration-200',
   );
@@ -74,7 +77,10 @@ export default function NavLink({
   );
 
   const arrowSize = size === 'mobile' ? 24 : 16;
-  const sectionIconSize = size === 'mobile' ? 32 : 20;
+
+  const iconSize = size === 'mobile'
+    ? (icons.length === 1 ? 36 : icons.length === 2 ? 30 : 26)
+    : (icons.length === 1 ? 22 : icons.length === 2 ? 18 : 16);
 
   return (
     <Pressable
@@ -89,7 +95,9 @@ export default function NavLink({
         className={frameStyles}
       >
         <span className={iconStyles}>
-          <Icon name={icon} size={sectionIconSize} className="text-current" />
+          {icons.map((icon) => (
+            <Icon key={icon} name={icon} size={iconSize} className="text-current" />
+          ))}
         </span>
         <span className={labelStyles}>{label}</span>
         <span className={arrowStyles}>
