@@ -46,19 +46,14 @@ const SECTION_CONTENT: Record<FacePosition, SectionContent> = {
     href: '/ai',
   },
   right: {
-    title: 'Showcase',
-    description:
-      'Featured projects and deep dives. A closer look at the work we\'re most proud of.',
-    href: '/work/dock-stories',
+    title: 'Games',
+    description: 'Explore our mini web games!',
+    href: '/games',
   },
   bottom: {
     title: 'Haify the Hamster',
-    description: [
-      'You found the easter egg!',
-      'Help Haify the AI Hamster navigate the digital realm — avoid Pac-Man, Ghosts, Light Cycles and more!',
-    ],
-    href: 'https://hoppinghaify.lovable.app/',
-    cta: 'Play',
+    description: 'Haify Hamm is Head of Knowledge at Urban Tech Creative, check out some of his work!',
+    href: '/work/haify',
   },
 };
 

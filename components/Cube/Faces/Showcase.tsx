@@ -1,119 +1,63 @@
 import FaceGrid from './FaceGrid';
 import {
   Cell,
-  ColorBlock,
-  GradientBlock,
   GridLines,
-  IconSingle,
   ImageBlock,
-  StripeBars,
   TextBlock,
+  VerticalTextBlock,
+  IconSingle,
+  StripeBars,
 } from './primitives';
 
 // Preserved source — restore this as the Showcase() return to redesign and re-bake
 const ShowcaseDesign = () => (
   <FaceGrid className="bg-theme-black!">
-    <GridLines opacity={0.08} />
-
-    {/* Full-face image — panned to the left of the artwork */}
+    {/* Both images screen-blended for neon composite */}
     <Cell col={1} row={1} colSpan={6} rowSpan={6}>
-      <ImageBlock
-        src="/images/work/dock-stories-02.webp"
-        alt="Dock Stories LED installation"
-        objectPosition="left center"
-      />
+      <ImageBlock src="/images/games/hopping-haify.png" alt="Hopping Haify" mixBlendMode="screen" opacity={0.75} />
+    </Cell>
+    <Cell col={1} row={1} colSpan={6} rowSpan={6} zIndex={1}>
+      <ImageBlock src="/images/games/haify-v-kraftwerk.png" alt="Haify v Kraftwerk" mixBlendMode="screen" opacity={0.5} />
     </Cell>
 
-    {/* Subtle gradient tint over the whole face — unifies the palette */}
-    <Cell col={1} row={1} colSpan={6} rowSpan={6}>
-      <GradientBlock
-        direction="to bottom right"
-        stops={[
-          { color: 'var(--theme-purple)', position: 0 },
-          { color: 'var(--theme-cyan)', position: 100 },
-        ]}
-        opacity={0.2}
-      />
+    {/* Grid lines give a digital feel */}
+    <Cell col={1} row={1} colSpan={6} rowSpan={6} zIndex={2}>
+      <GridLines color="var(--theme-cyan)" opacity={0.18} />
     </Cell>
 
-    {/* Bottom gradient for text legibility */}
-    <Cell col={1} row={3} colSpan={6} rowSpan={4}>
-      <GradientBlock
-        direction="to top"
-        stops={[
-          { color: 'var(--theme-black)', position: 0 },
-          { color: 'transparent', position: 100 },
-        ]}
-        opacity={0.9}
-      />
+    {/* Left vertical label */}
+    <Cell col={1} row={1} rowSpan={5} zIndex={4}>
+      <VerticalTextBlock fontSize={3.5} direction="up" mono uppercase letterSpacing="0.25em" color="var(--theme-cyan)" opacity={0.7}>
+        WEB GAMES
+      </VerticalTextBlock>
     </Cell>
 
-    {/* Colour accent column — top-right */}
-    <Cell col={6} row={1}>
-      <ColorBlock color="var(--theme-cyan)" opacity={0.9} />
-    </Cell>
-    <Cell col={6} row={2}>
-      <ColorBlock color="var(--theme-orange)" opacity={0.9} />
-    </Cell>
-    <Cell col={6} row={3}>
-      <ColorBlock color="var(--theme-green)" opacity={0.9} />
+    {/* Right vertical label */}
+    <Cell col={6} row={2} rowSpan={4} zIndex={4}>
+      <VerticalTextBlock fontSize={3.5} direction="down" mono uppercase letterSpacing="0.25em" color="var(--theme-magenta)" opacity={0.7}>
+        PLAY NOW
+      </VerticalTextBlock>
     </Cell>
 
-    {/* Icons over colour column */}
-    <Cell col={6} row={1} zIndex={2}>
-      <IconSingle name="cube" color="var(--theme-black)" opacity={1} iconSize={8} />
-    </Cell>
-    <Cell col={6} row={2} zIndex={2}>
-      <IconSingle name="anchor" color="var(--theme-black)" opacity={1} iconSize={8} />
-    </Cell>
-    <Cell col={6} row={3} zIndex={2}>
-      <IconSingle name="footprints" color="var(--theme-black)" opacity={1} iconSize={8} />
-    </Cell>
-
-    {/* Stripe bar divider — R5 top edge */}
-    <Cell col={1} row={5} colSpan={6} zIndex={1}>
-      <StripeBars
-        colors={[
-          'var(--theme-cyan)',
-          'var(--theme-magenta)',
-          'var(--theme-orange)',
-          'var(--theme-purple)',
-          'var(--theme-green)',
-          'var(--theme-cyan)',
-        ]}
-      />
-    </Cell>
-
-    {/* "Showcase" eyebrow — row 5 */}
-    <Cell col={1} row={5} colSpan={6} zIndex={2}>
+    {/* Large centred type */}
+    <Cell col={2} row={3} colSpan={4} rowSpan={2} zIndex={5}>
       <TextBlock
-        fontSize={7}
+        fontSize={22}
         color="var(--theme-cyan)"
-        fontWeight={700}
-        mono
-        uppercase
-        letterSpacing="0.1em"
-        alignHorizontal="start"
-        alignVertical="end"
-        padding={3.5}
+        fontWeight={900}
+        letterSpacing="-0.04em"
       >
-        Showcase
+        GAMES
       </TextBlock>
     </Cell>
 
-    {/* "Dock Stories" hero label — rows 5–6 */}
-    <Cell col={1} row={5} colSpan={6} rowSpan={2} zIndex={2}>
-      <TextBlock
-        fontSize={13}
-        color="var(--theme-white)"
-        fontWeight={900}
-        letterSpacing="-0.025em"
-        alignHorizontal="start"
-        alignVertical="end"
-        padding={3.5}
-      >
-        Dock Stories
-      </TextBlock>
+    {/* Icon — bottom centre */}
+    <Cell col={3} row={5} colSpan={2} rowSpan={2} zIndex={5}>
+      <IconSingle name="play-circle" color="var(--theme-magenta)" weight="duotone" iconSize={9} />
+    </Cell>
+
+    <Cell col={1} row={1} colSpan={6} zIndex={6}>
+      <StripeBars colors={['var(--theme-cyan)', 'var(--theme-magenta)', 'var(--theme-orange)', 'var(--theme-green)']} thickness={2} />
     </Cell>
   </FaceGrid>
 );
