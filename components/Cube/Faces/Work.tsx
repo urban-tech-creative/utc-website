@@ -104,7 +104,7 @@ const WorkDesign = () => (
 
       <ProjectCell col={1} row={1} color="var(--theme-purple)" title={<>Construct.AR</>} image={IMG.construct} alt="Construct.AR" icons={PROJECT_ICONS.construct} iconColor="var(--theme-white)" />
       <ProjectCell col={3} row={1} color="var(--theme-orange)" title={<>Pop.XR</>} image={IMG.popXr} alt="Pop.XR" icons={PROJECT_ICONS.popXr} iconColor="var(--theme-white)" />
-      <ProjectCell col={5} row={1} color="var(--theme-green)" title={<>BT Urban.AR</>} image={IMG.btUrban} alt="BT Urban.AR" icons={PROJECT_ICONS.btUrban} iconColor="var(--theme-white)" />
+      <ProjectCell col={5} row={1} color="var(--theme-green)" title={<>Cityscape XR</>} image={IMG.btUrban} alt="Cityscape XR" icons={PROJECT_ICONS.btUrban} iconColor="var(--theme-white)" />
 
       <ProjectCell col={1} row={5} color="var(--theme-green)" title={<>Tracing <br />the <br />Footprint</>} image={IMG.tracing} alt="Tracing the Footprint" icons={PROJECT_ICONS.tracing} iconColor="var(--theme-white)" />
       <ProjectCell col={3} row={5} color="var(--theme-magenta)" title={<>Sammy&apos;s <br />Xmas <br />Adventure</>} image={IMG.sammys} alt="Sammy's Christmas Adventure" icons={PROJECT_ICONS.sammys} iconColor="var(--theme-white)" />

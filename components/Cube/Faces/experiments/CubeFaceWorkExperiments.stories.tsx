@@ -97,7 +97,7 @@ export const ImageMosaic: Story = {
         <ImageBlock src={IMG.popXr} alt="Pop.XR" />
       </Cell>
       <Cell col={5} row={1} colSpan={2} rowSpan={3}>
-        <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" />
+        <ImageBlock src={IMG.btUrban} alt="Cityscape XR" />
       </Cell>
 
       {/* Row 2: three 2-col × 3-row blocks */}
@@ -132,7 +132,7 @@ export const ImageGridWithLines: Story = {
         <ImageBlock src={IMG.popXr} alt="Pop.XR" opacity={0.8} />
       </Cell>
       <Cell col={5} row={1} colSpan={2} rowSpan={3}>
-        <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" opacity={0.8} />
+        <ImageBlock src={IMG.btUrban} alt="Cityscape XR" opacity={0.8} />
       </Cell>
       <Cell col={1} row={4} colSpan={2} rowSpan={3}>
         <ImageBlock src={IMG.tracing} alt="Tracing the Footprint" opacity={0.8} />
@@ -170,7 +170,7 @@ export const HeroThumbnails: Story = {
         <ImageBlock src={IMG.popXr} alt="Pop.XR" />
       </Cell>
       <Cell col={5} row={3} colSpan={2} rowSpan={2}>
-        <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" />
+        <ImageBlock src={IMG.btUrban} alt="Cityscape XR" />
       </Cell>
 
       {/* Bottom row — three 2×2 thumbnails */}
@@ -281,9 +281,9 @@ export const LabelledMosaic: Story = {
         </TextBlock>
       </Cell>
 
-      {/* Tile 4 — BT Urban.AR */}
+      {/* Tile 4 — Cityscape XR */}
       <Cell col={4} row={4} colSpan={3} rowSpan={3}>
-        <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" />
+        <ImageBlock src={IMG.btUrban} alt="Cityscape XR" />
       </Cell>
       <Cell col={4} row={6} colSpan={3} zIndex={1}>
         <GradientBlock
@@ -304,7 +304,7 @@ export const LabelledMosaic: Story = {
           padding={1}
           alignHorizontal="start" alignVertical="start"
         >
-          BT Urban.AR
+          Cityscape XR
         </TextBlock>
       </Cell>
 
@@ -356,7 +356,7 @@ export const GradientMosaic: Story = {
 
       {/* Tile 3 — orange */}
       <Cell col={1} row={3} colSpan={3} rowSpan={2}>
-        <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" />
+        <ImageBlock src={IMG.btUrban} alt="Cityscape XR" />
       </Cell>
       <Cell col={1} row={3} colSpan={3} rowSpan={2}>
         <GradientBlock
@@ -452,11 +452,11 @@ export const StripLayout: Story = {
 
       {/* Strip 3 */}
       <Cell col={1} row={3} colSpan={4}>
-        <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" mask="fade-right" />
+        <ImageBlock src={IMG.btUrban} alt="Cityscape XR" mask="fade-right" />
       </Cell>
       <Cell col={4} row={3} colSpan={3} zIndex={1}>
         <TextBlock fontSize={2.8} mono uppercase letterSpacing="0.08em" fontWeight={700} padding={0.8} alignHorizontal="end" alignVertical="end">
-          BT Urban.AR
+          Cityscape XR
         </TextBlock>
       </Cell>
 
@@ -517,7 +517,7 @@ export const IconImageQuad: Story = {
         <ImageBlock src={IMG.tracing} alt="Tracing the Footprint" opacity={0.75} />
       </Cell>
       <Cell col={5} row={5} colSpan={2} rowSpan={2}>
-        <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" opacity={0.75} />
+        <ImageBlock src={IMG.btUrban} alt="Cityscape XR" opacity={0.75} />
       </Cell>
 
       {/* Centre — icon quad */}
@@ -588,7 +588,7 @@ export const DarkPortfolio: Story = {
         <ImageBlock src={IMG.popXr} alt="Pop.XR" opacity={0.35} />
       </Cell>
       <Cell col={5} row={4} colSpan={2} rowSpan={2} zIndex={0}>
-        <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" opacity={0.25} />
+        <ImageBlock src={IMG.btUrban} alt="Cityscape XR" opacity={0.25} />
       </Cell>
 
       {/* Colour overlay */}
@@ -696,7 +696,7 @@ export const HoverImageSwap: Story = {
         </Cell>
         <Cell col={1} row={4} colSpan={3} rowSpan={3}>
           <div className="w-full h-full transition-opacity duration-700 ease-out group-hover:opacity-0">
-            <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" />
+            <ImageBlock src={IMG.btUrban} alt="Cityscape XR" />
           </div>
         </Cell>
         <Cell col={4} row={4} colSpan={3} rowSpan={3}>
@@ -718,7 +718,7 @@ export const HoverImageSwap: Story = {
         </Cell>
         <Cell col={1} row={4} colSpan={3} rowSpan={3}>
           <div className="w-full h-full opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100">
-            <ImageBlock src={IMG.btUrban2} alt="BT Urban.AR alt" />
+            <ImageBlock src={IMG.btUrban2} alt="Cityscape XR alt" />
           </div>
         </Cell>
         <Cell col={4} row={4} colSpan={3} rowSpan={3}>
@@ -822,7 +822,7 @@ export const HoverRevealLabels: Story = {
 
         {/* Tile 4 — image */}
         <Cell col={4} row={4} colSpan={3} rowSpan={3}>
-          <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" />
+          <ImageBlock src={IMG.btUrban} alt="Cityscape XR" />
         </Cell>
         {/* Tile 4 — hover overlay */}
         <Cell col={4} row={4} colSpan={3} rowSpan={3} zIndex={1}>
@@ -840,7 +840,7 @@ export const HoverRevealLabels: Story = {
         <Cell col={4} row={6} colSpan={3} zIndex={2}>
           <div className="w-full h-full opacity-0 translate-y-[2cqi] transition-all duration-500 ease-out delay-150 group-hover:opacity-100 group-hover:translate-y-0">
             <TextBlock fontSize={3.5} mono uppercase letterSpacing="0.08em" fontWeight={700} padding={1} alignHorizontal="start" alignVertical="start">
-              BT Urban.AR
+              Cityscape XR
             </TextBlock>
           </div>
         </Cell>
@@ -894,7 +894,7 @@ export const StripColourBlock: Story = {
         <ImageBlock src={IMG.popXr} alt="Pop.XR" mask="fade-right" opacity={0.45} />
       </Cell>
       <Cell col={1} row={3} colSpan={4} zIndex={1}>
-        <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" mask="fade-right" opacity={0.45} />
+        <ImageBlock src={IMG.btUrban} alt="Cityscape XR" mask="fade-right" opacity={0.45} />
       </Cell>
       <Cell col={1} row={4} colSpan={4} zIndex={1}>
         <ImageBlock src={IMG.tracing} alt="Tracing the Footprint" mask="fade-right" opacity={0.45} />
@@ -919,7 +919,7 @@ export const StripColourBlock: Story = {
       </Cell>
       <Cell col={4} row={3} colSpan={3} zIndex={2}>
         <TextBlock fontSize={2.8} mono uppercase letterSpacing="0.08em" fontWeight={700} padding={0.8} alignHorizontal="end" alignVertical="end">
-          BT Urban.AR
+          Cityscape XR
         </TextBlock>
       </Cell>
       <Cell col={4} row={4} colSpan={3} zIndex={2}>
@@ -1027,12 +1027,12 @@ export const AcidColourBlock: Story = {
         </TextBlock>
       </Cell>
 
-      {/* C3 · BT Urban.AR · orange */}
+      {/* C3 · Cityscape XR · orange */}
       <Cell col={5} row={1} colSpan={2} rowSpan={2}>
         <ColorBlock color="var(--theme-orange)" />
       </Cell>
       <Cell col={5} row={1} colSpan={2} rowSpan={2}>
-        <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" opacity={0.45} />
+        <ImageBlock src={IMG.btUrban} alt="Cityscape XR" opacity={0.45} />
       </Cell>
       {/* Label: rotated spine — right edge */}
       <Cell col={6} row={1} rowSpan={2} zIndex={2}>
@@ -1049,7 +1049,7 @@ export const AcidColourBlock: Story = {
               lineHeight: 1,
             }}
           >
-            BT Urban.AR
+            Cityscape XR
           </span>
         </div>
       </Cell>
@@ -1303,12 +1303,12 @@ export const AcidIcons: Story = {
           </TextBlock>
         </Cell>
 
-        {/* C3 · BT Urban.AR · orange */}
+        {/* C3 · Cityscape XR · orange */}
         <Cell col={5} row={1} colSpan={2} rowSpan={2}>
           <ColorBlock color="var(--theme-orange)" />
         </Cell>
         <Cell col={5} row={1} colSpan={2} rowSpan={2}>
-          <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" opacity={0.45} />
+          <ImageBlock src={IMG.btUrban} alt="Cityscape XR" opacity={0.45} />
         </Cell>
         {/* Icons — centre of cell */}
         <Cell col={5} row={1} zIndex={2}>
@@ -1337,7 +1337,7 @@ export const AcidIcons: Story = {
               color: 'var(--theme-black)',
               lineHeight: 1,
             }}>
-              BT Urban.AR
+              Cityscape XR
             </span>
           </div>
         </Cell>
@@ -1562,17 +1562,17 @@ export const AcidIconsConsistent: Story = {
             />
           </Cell>
 
-          {/* C3 · BT Urban.AR · orange */}
+          {/* C3 · Cityscape XR · orange */}
           <Cell col={5} row={1} colSpan={2} rowSpan={2}>
             <ColorBlock color="var(--theme-orange)" />
           </Cell>
           <Cell col={5} row={1} colSpan={2} rowSpan={2}>
-            <ImageBlock src={IMG.btUrban} alt="BT Urban.AR" opacity={0.45} />
+            <ImageBlock src={IMG.btUrban} alt="Cityscape XR" opacity={0.45} />
           </Cell>
           {/* Text — top-right */}
           <Cell col={6} row={1} zIndex={2}>
             <TextBlock fontSize={2.5} mono uppercase letterSpacing="0.12em" fontWeight={900} color="var(--theme-black)" padding={0.5} alignHorizontal="end" alignVertical="end">
-              BT Urban.AR
+              Cityscape XR
             </TextBlock>
           </Cell>
           {/* Icons — bottom-right */}
@@ -1775,13 +1775,13 @@ export const AcidNoImages: Story = {
             />
           </Cell>
 
-          {/* C3 · BT Urban.AR · orange */}
+          {/* C3 · Cityscape XR · orange */}
           <Cell col={5} row={1} colSpan={2} rowSpan={2}>
             <ColorBlock color="var(--theme-orange)" />
           </Cell>
           <Cell col={6} row={1} zIndex={2}>
             <TextBlock fontSize={2.5} mono uppercase letterSpacing="0.12em" fontWeight={900} color="var(--theme-black)" padding={0.5} alignHorizontal="end" alignVertical="end">
-              BT Urban.AR
+              Cityscape XR
             </TextBlock>
           </Cell>
           <Cell col={6} row={2} zIndex={2}>

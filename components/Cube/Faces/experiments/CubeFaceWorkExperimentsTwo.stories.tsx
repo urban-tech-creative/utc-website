@@ -268,9 +268,9 @@ export const Edited01: Story = {
             col={5}
             row={1}
             color="var(--theme-orange)"
-            title={<>BT <br />Urban<br />.AR</>}
+            title={<>Cityscape XR</>}
             image={IMG.btUrban}
-            alt="BT Urban.AR"
+            alt="Cityscape XR"
             icons={PROJECT_ICONS.btUrban}
             iconColor="var(--theme-white)"
           />
@@ -391,9 +391,9 @@ export const Edited01TwoIcons: Story = {
             col={5}
             row={1}
             color="var(--theme-green)"
-            title={<>BT Urban.AR</>}
+            title={<>Cityscape XR</>}
             image={IMG.btUrban}
-            alt="BT Urban.AR"
+            alt="Cityscape XR"
             icons={PROJECT_ICONS_TWO.btUrban}
             iconColor="var(--theme-white)"
           />
