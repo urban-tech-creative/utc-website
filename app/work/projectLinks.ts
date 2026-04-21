@@ -5,7 +5,7 @@ export const workProjectLinks: NavLinkItem[] = [
   { href: '/work/trailmakers', label: 'Trailmakers', icons: ['brain', 'sparkle', 'path'] },
   { href: '/work/sammys-christmas-adventure', label: "Sammy's Christmas Adventure", icons: ['device-mobile', 'cube-focus', 'path'] },
   { href: '/work/bt-manufacturing-showcase', label: 'BT Manufacturing Showcase', icons: ['cube-focus', 'globe', 'circuit-board'] },
-  { href: '/work/bt-urban-ar', label: 'BT Urban.AR', icons: ['cube-focus', 'fediverse-logo', 'network'] },
+  { href: '/work/bt-urban-ar', label: 'Cityscape XR', icons: ['cube-focus', 'fediverse-logo', 'network'] },
   { href: '/work/construct-ar', label: 'Construct.AR', icons: ['google-cardboard', 'hard-hat', 'crane'] },
   { href: '/work/pop-xr', label: 'Pop.XR', icons: ['google-cardboard', 'megaphone', 'cube-focus'] },
   { href: '/work/tracing-the-footprint', label: 'Tracing the Footprint', icons: ['film-strip', 'footprints', 'monitor'] },

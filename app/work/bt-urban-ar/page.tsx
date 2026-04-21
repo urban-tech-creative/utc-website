@@ -9,7 +9,7 @@ export default function BTUrbanARPage() {
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Work', path: '/work' },
-          { label: 'BT Urban.AR', current: true },
+          { label: 'Cityscape XR', current: true },
         ]}
       />
       <Page>
