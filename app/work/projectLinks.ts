@@ -1,6 +1,7 @@
 import type { NavLinkItem } from '@/components/Nav/types';
 
 export const workProjectLinks: NavLinkItem[] = [
+  { href: '/work/cambridge-tech-enabled-care-services', label: 'Cambridge Tech Enabled Care Services', icons: ['virtual-reality', 'globe', 'users'] },
   { href: '/work/sipswich', label: "Sip'Swich", icons: ['device-mobile', 'path', 'users'] },
   { href: '/work/trailmakers', label: 'Trailmakers', icons: ['brain', 'sparkle', 'path'] },
   { href: '/work/sammys-christmas-adventure', label: "Sammy's Christmas Adventure", icons: ['device-mobile', 'cube-focus', 'path'] },
