@@ -3,6 +3,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   pageExtensions: ['ts', 'tsx', 'mdx'],
+  async redirects() {
+    return [
+      { source: '/ai', destination: '/working-with-us', permanent: true },
+    ];
+  },
 };
 
 const withMDX = createMDX({});

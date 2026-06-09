@@ -43,7 +43,7 @@ const SECTION_CONTENT: Record<FacePosition, SectionContent> = {
     title: 'Working With Us',
     description:
       'How we work — from early strategy and discovery through to development, deployment, and ongoing support.',
-    href: '/ai',
+    href: '/working-with-us',
   },
   right: {
     title: 'Games',
