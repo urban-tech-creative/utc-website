@@ -40,9 +40,9 @@ const SECTION_CONTENT: Record<FacePosition, SectionContent> = {
     href: '/about',
   },
   back: {
-    title: 'AI',
+    title: 'Working With Us',
     description:
-      'Artificial intelligence tools and integrations. Content coming soon.',
+      'How we work — from early strategy and discovery through to development, deployment, and ongoing support.',
     href: '/ai',
   },
   right: {

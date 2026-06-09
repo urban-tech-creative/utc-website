@@ -102,7 +102,7 @@ const WorkDesign = () => (
   <div style={{ backgroundColor: 'var(--theme-black)' }} className="w-full h-full">
     <FaceGrid className="bg-transparent!">
 
-      <ProjectCell col={1} row={1} color="var(--theme-purple)" title={<>Construct.AR</>} image={IMG.construct} alt="Construct.AR" icons={PROJECT_ICONS.construct} iconColor="var(--theme-white)" />
+      <ProjectCell col={1} row={1} color="var(--theme-purple)" title={<>Construct.XR</>} image={IMG.construct} alt="Construct.XR" icons={PROJECT_ICONS.construct} iconColor="var(--theme-white)" />
       <ProjectCell col={3} row={1} color="var(--theme-orange)" title={<>Pop.XR</>} image={IMG.popXr} alt="Pop.XR" icons={PROJECT_ICONS.popXr} iconColor="var(--theme-white)" />
       <ProjectCell col={5} row={1} color="var(--theme-green)" title={<>Cityscape XR</>} image={IMG.btUrban} alt="Cityscape XR" icons={PROJECT_ICONS.btUrban} iconColor="var(--theme-white)" />
 

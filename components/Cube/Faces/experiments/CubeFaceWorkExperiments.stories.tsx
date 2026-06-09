@@ -91,7 +91,7 @@ export const ImageMosaic: Story = {
     <FaceGrid>
       {/* Row 1: three 2-col × 3-row blocks */}
       <Cell col={1} row={1} colSpan={2} rowSpan={3}>
-        <ImageBlock src={IMG.construct} alt="Construct.AR" />
+        <ImageBlock src={IMG.construct} alt="Construct.XR" />
       </Cell>
       <Cell col={3} row={1} colSpan={2} rowSpan={3}>
         <ImageBlock src={IMG.popXr} alt="Pop.XR" />
@@ -126,7 +126,7 @@ export const ImageGridWithLines: Story = {
   render: () => (
     <FaceGrid className="bg-theme-black!">
       <Cell col={1} row={1} colSpan={2} rowSpan={3}>
-        <ImageBlock src={IMG.construct} alt="Construct.AR" opacity={0.8} />
+        <ImageBlock src={IMG.construct} alt="Construct.XR" opacity={0.8} />
       </Cell>
       <Cell col={3} row={1} colSpan={2} rowSpan={3}>
         <ImageBlock src={IMG.popXr} alt="Pop.XR" opacity={0.8} />
@@ -162,7 +162,7 @@ export const HeroThumbnails: Story = {
     <FaceGrid className="bg-theme-black!">
       {/* Hero — top-left 4×4 */}
       <Cell col={1} row={1} colSpan={4} rowSpan={4}>
-        <ImageBlock src={IMG.construct} alt="Construct.AR" />
+        <ImageBlock src={IMG.construct} alt="Construct.XR" />
       </Cell>
 
       {/* Right column — two 2×2 thumbnails */}
@@ -200,9 +200,9 @@ export const LabelledMosaic: Story = {
   name: '4 – Labelled Mosaic',
   render: () => (
     <FaceGrid className="bg-theme-black!">
-      {/* Tile 1 — Construct.AR */}
+      {/* Tile 1 — Construct.XR */}
       <Cell col={1} row={1} colSpan={3} rowSpan={3}>
-        <ImageBlock src={IMG.construct} alt="Construct.AR" />
+        <ImageBlock src={IMG.construct} alt="Construct.XR" />
       </Cell>
       <Cell col={1} row={3} colSpan={3} zIndex={1}>
         <GradientBlock
@@ -223,7 +223,7 @@ export const LabelledMosaic: Story = {
           padding={1}
           alignHorizontal="start" alignVertical="start"
         >
-          Construct.AR
+          Construct.XR
         </TextBlock>
       </Cell>
 
@@ -326,7 +326,7 @@ export const GradientMosaic: Story = {
     <FaceGrid className="bg-theme-black!">
       {/* Tile 1 — purple */}
       <Cell col={1} row={1} colSpan={3} rowSpan={2}>
-        <ImageBlock src={IMG.construct} alt="Construct.AR" />
+        <ImageBlock src={IMG.construct} alt="Construct.XR" />
       </Cell>
       <Cell col={1} row={1} colSpan={3} rowSpan={2}>
         <GradientBlock
@@ -432,11 +432,11 @@ export const StripLayout: Story = {
     <FaceGrid className="bg-theme-black!">
       {/* Strip 1 */}
       <Cell col={1} row={1} colSpan={4}>
-        <ImageBlock src={IMG.construct} alt="Construct.AR" mask="fade-right" />
+        <ImageBlock src={IMG.construct} alt="Construct.XR" mask="fade-right" />
       </Cell>
       <Cell col={4} row={1} colSpan={3} zIndex={1}>
         <TextBlock fontSize={2.8} mono uppercase letterSpacing="0.08em" fontWeight={700} padding={0.8} alignHorizontal="end" alignVertical="end">
-          Construct.AR
+          Construct.XR
         </TextBlock>
       </Cell>
 
@@ -508,7 +508,7 @@ export const IconImageQuad: Story = {
     <FaceGrid className="bg-theme-black!">
       {/* Corner images */}
       <Cell col={1} row={1} colSpan={2} rowSpan={2}>
-        <ImageBlock src={IMG.construct} alt="Construct.AR" opacity={0.75} />
+        <ImageBlock src={IMG.construct} alt="Construct.XR" opacity={0.75} />
       </Cell>
       <Cell col={5} row={1} colSpan={2} rowSpan={2}>
         <ImageBlock src={IMG.popXr} alt="Pop.XR" opacity={0.75} />
@@ -582,7 +582,7 @@ export const DarkPortfolio: Story = {
 
       {/* Scattered project images */}
       <Cell col={3} row={1} colSpan={4} rowSpan={4} zIndex={0}>
-        <ImageBlock src={IMG.construct} alt="Construct.AR" mask="fade-down" opacity={0.7} />
+        <ImageBlock src={IMG.construct} alt="Construct.XR" mask="fade-down" opacity={0.7} />
       </Cell>
       <Cell col={1} row={1} colSpan={2} rowSpan={2} zIndex={0}>
         <ImageBlock src={IMG.popXr} alt="Pop.XR" opacity={0.35} />
@@ -686,7 +686,7 @@ export const HoverImageSwap: Story = {
         {/* Resting images — visible, fade out on hover */}
         <Cell col={1} row={1} colSpan={3} rowSpan={3}>
           <div className="w-full h-full transition-opacity duration-700 ease-out group-hover:opacity-0">
-            <ImageBlock src={IMG.construct} alt="Construct.AR" />
+            <ImageBlock src={IMG.construct} alt="Construct.XR" />
           </div>
         </Cell>
         <Cell col={4} row={1} colSpan={3} rowSpan={3}>
@@ -708,7 +708,7 @@ export const HoverImageSwap: Story = {
         {/* Hover images — hidden, fade in on hover */}
         <Cell col={1} row={1} colSpan={3} rowSpan={3}>
           <div className="w-full h-full opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100">
-            <ImageBlock src={IMG.construct2} alt="Construct.AR alt" />
+            <ImageBlock src={IMG.construct2} alt="Construct.XR alt" />
           </div>
         </Cell>
         <Cell col={4} row={1} colSpan={3} rowSpan={3}>
@@ -747,7 +747,7 @@ export const HoverRevealLabels: Story = {
       <FaceGrid className="bg-theme-black!">
         {/* Tile 1 — image */}
         <Cell col={1} row={1} colSpan={3} rowSpan={3}>
-          <ImageBlock src={IMG.construct} alt="Construct.AR" />
+          <ImageBlock src={IMG.construct} alt="Construct.XR" />
         </Cell>
         {/* Tile 1 — hover overlay */}
         <Cell col={1} row={1} colSpan={3} rowSpan={3} zIndex={1}>
@@ -765,7 +765,7 @@ export const HoverRevealLabels: Story = {
         <Cell col={1} row={3} colSpan={3} zIndex={2}>
           <div className="w-full h-full opacity-0 translate-y-[2cqi] transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0">
             <TextBlock fontSize={3.5} mono uppercase letterSpacing="0.08em" fontWeight={700} padding={1} alignHorizontal="start" alignVertical="start">
-              Construct.AR
+              Construct.XR
             </TextBlock>
           </div>
         </Cell>
@@ -888,7 +888,7 @@ export const StripColourBlock: Story = {
 
       {/* ── Layer 1: strip images — semi-transparent over colour ───── */}
       <Cell col={1} row={1} colSpan={4} zIndex={1}>
-        <ImageBlock src={IMG.construct} alt="Construct.AR" mask="fade-right" opacity={0.45} />
+        <ImageBlock src={IMG.construct} alt="Construct.XR" mask="fade-right" opacity={0.45} />
       </Cell>
       <Cell col={1} row={2} colSpan={4} zIndex={1}>
         <ImageBlock src={IMG.popXr} alt="Pop.XR" mask="fade-right" opacity={0.45} />
@@ -909,7 +909,7 @@ export const StripColourBlock: Story = {
       {/* ── Layer 2: project name labels — right side ──────────────── */}
       <Cell col={4} row={1} colSpan={3} zIndex={2}>
         <TextBlock fontSize={2.8} mono uppercase letterSpacing="0.08em" fontWeight={700} padding={0.8} alignHorizontal="end" alignVertical="end">
-          Construct.AR
+          Construct.XR
         </TextBlock>
       </Cell>
       <Cell col={4} row={2} colSpan={3} zIndex={2}>
@@ -977,12 +977,12 @@ export const AcidColourBlock: Story = {
 
       {/* ── Top three cells: colour + image ─────────────────────── */}
 
-      {/* C1 · Construct.AR · purple */}
+      {/* C1 · Construct.XR · purple */}
       <Cell col={1} row={1} colSpan={2} rowSpan={2}>
         <ColorBlock color="var(--theme-purple)" />
       </Cell>
       <Cell col={1} row={1} colSpan={2} rowSpan={2}>
-        <ImageBlock src={IMG.construct} alt="Construct.AR" opacity={0.45} />
+        <ImageBlock src={IMG.construct} alt="Construct.XR" opacity={0.45} />
       </Cell>
       {/* Label: rotated spine — left edge, reading bottom→top */}
       <Cell col={1} row={1} rowSpan={2} zIndex={2}>
@@ -1000,7 +1000,7 @@ export const AcidColourBlock: Story = {
               lineHeight: 1,
             }}
           >
-            Construct.AR
+            Construct.XR
           </span>
         </div>
       </Cell>
@@ -1236,12 +1236,12 @@ export const AcidIcons: Story = {
 
         {/* ── Top row: 3 × 2×2 cells ─────────────────────────────── */}
 
-        {/* C1 · Construct.AR · purple */}
+        {/* C1 · Construct.XR · purple */}
         <Cell col={1} row={1} colSpan={2} rowSpan={2}>
           <ColorBlock color="var(--theme-purple)" />
         </Cell>
         <Cell col={1} row={1} colSpan={2} rowSpan={2}>
-          <ImageBlock src={IMG.construct} alt="Construct.AR" opacity={0.45} />
+          <ImageBlock src={IMG.construct} alt="Construct.XR" opacity={0.45} />
         </Cell>
         {/* Icons — bottom-left corner of cell */}
         <Cell col={1} row={2} zIndex={2}>
@@ -1270,7 +1270,7 @@ export const AcidIcons: Story = {
               color: 'var(--theme-white)',
               lineHeight: 1,
             }}>
-              Construct.AR
+              Construct.XR
             </span>
           </div>
         </Cell>
@@ -1506,17 +1506,17 @@ export const AcidIconsConsistent: Story = {
 
           {/* ── Top row: 3 × 2×2 cells ───────────────────────────── */}
 
-          {/* C1 · Construct.AR · purple */}
+          {/* C1 · Construct.XR · purple */}
           <Cell col={1} row={1} colSpan={2} rowSpan={2}>
             <ColorBlock color="var(--theme-purple)" />
           </Cell>
           <Cell col={1} row={1} colSpan={2} rowSpan={2}>
-            <ImageBlock src={IMG.construct} alt="Construct.AR" opacity={0.45} />
+            <ImageBlock src={IMG.construct} alt="Construct.XR" opacity={0.45} />
           </Cell>
           {/* Text — top-right */}
           <Cell col={2} row={1} zIndex={2}>
             <TextBlock fontSize={2.5} mono uppercase letterSpacing="0.12em" fontWeight={900} color="var(--theme-white)" padding={0.5} alignHorizontal="end" alignVertical="end">
-              Construct.AR
+              Construct.XR
             </TextBlock>
           </Cell>
           {/* Icons — bottom-right */}
@@ -1739,13 +1739,13 @@ export const AcidNoImages: Story = {
       <div style={{ backgroundColor: bg }} className="w-full h-full">
         <FaceGrid className="bg-transparent!">
 
-          {/* C1 · Construct.AR · purple */}
+          {/* C1 · Construct.XR · purple */}
           <Cell col={1} row={1} colSpan={2} rowSpan={2}>
             <ColorBlock color="var(--theme-purple)" />
           </Cell>
           <Cell col={2} row={1} zIndex={2}>
             <TextBlock fontSize={2.5} mono uppercase letterSpacing="0.12em" fontWeight={900} color="var(--theme-white)" padding={0.5} alignHorizontal="end" alignVertical="end">
-              Construct.AR
+              Construct.XR
             </TextBlock>
           </Cell>
           <Cell col={2} row={2} zIndex={2}>

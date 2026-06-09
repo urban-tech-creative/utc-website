@@ -250,7 +250,7 @@ export const Edited01: Story = {
             color="var(--theme-purple)"
             title={<>Construct<br />.AR</>}
             image={IMG.construct}
-            alt="Construct.AR"
+            alt="Construct.XR"
             icons={PROJECT_ICONS.construct}
             iconColor="var(--theme-white)"
           />
@@ -371,9 +371,9 @@ export const Edited01TwoIcons: Story = {
             col={1}
             row={1}
             color="var(--theme-purple)"
-            title={<>Construct.AR</>}
+            title={<>Construct.XR</>}
             image={IMG.construct}
-            alt="Construct.AR"
+            alt="Construct.XR"
             icons={PROJECT_ICONS_TWO.construct}
             iconColor="var(--theme-white)"
           />
