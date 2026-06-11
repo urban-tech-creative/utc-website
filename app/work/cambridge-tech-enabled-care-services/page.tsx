@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 import Content from '@/content/work/cambridge-tech-enabled-care-services.mdx';
-import Page from '@/components/Page/Page';
 
 export const metadata: Metadata = {
   title: 'Cambridge Tech Enabled Care Services',
@@ -16,17 +15,14 @@ export const metadata: Metadata = {
 
 export default function CambridgeTECPage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Work', path: '/work' },
           { label: 'Cambridge Tech Enabled Care Services', current: true },
         ]}
-      />
-      <Page>
+      >
         <Content />
-      </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

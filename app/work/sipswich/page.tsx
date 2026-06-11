@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 import Content from '@/content/work/sipswich.mdx';
-import Page from '@/components/Page/Page';
 
 export const metadata: Metadata = {
   title: "Sip'Swich",
@@ -16,17 +15,14 @@ export const metadata: Metadata = {
 
 export default function SipswichPage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Work', path: '/work' },
           { label: "Sip'Swich", current: true },
         ]}
-      />
-      <Page>
+      >
         <Content />
-      </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

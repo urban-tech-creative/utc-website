@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 import Content from '@/content/work/cambridge-arts-festival-ar-trail.mdx';
-import Page from '@/components/Page/Page';
 
 export const metadata: Metadata = {
   title: 'Cambridge Arts Festival AR Trail',
@@ -16,17 +15,14 @@ export const metadata: Metadata = {
 
 export default function CambridgeArtsFestivalArTrailPage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Work', path: '/work' },
           { label: 'Cambridge Arts Festival AR Trail', current: true },
         ]}
-      />
-      <Page>
+      >
         <Content />
-      </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

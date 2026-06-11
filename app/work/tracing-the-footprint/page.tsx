@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 import Content from '@/content/work/tracing-the-footprint.mdx';
-import Page from '@/components/Page/Page';
 
 export const metadata: Metadata = {
   title: 'Tracing the Footprint',
@@ -17,17 +16,14 @@ export const metadata: Metadata = {
 
 export default function TracingFootprintPage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Work', path: '/work' },
           { label: 'Tracing the Footprint', current: true },
         ]}
-      />
-      <Page>
+      >
       <Content />
-    </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

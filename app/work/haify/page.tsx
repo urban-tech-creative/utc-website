@@ -1,19 +1,15 @@
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 import Content from '@/content/work/haify.mdx';
-import Page from '@/components/Page/Page';
 
 export default function HaifyPage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Haify Work', current: true },
         ]}
-      />
-      <Page>
+      >
         <Content />
-      </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

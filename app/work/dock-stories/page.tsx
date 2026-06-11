@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 import Content from '@/content/work/dock-stories.mdx';
-import Page from '@/components/Page/Page';
 
 export const metadata: Metadata = {
   title: 'Dock Stories',
@@ -17,17 +16,14 @@ export const metadata: Metadata = {
 
 export default function DockStoriesPage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Work', path: '/work' },
           { label: 'Dock Stories', current: true },
         ]}
-      />
-      <Page>
+      >
       <Content />
-    </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

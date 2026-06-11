@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 import Content from '@/content/work/window-to-the-soul.mdx';
-import Page from '@/components/Page/Page';
 
 export const metadata: Metadata = {
   title: 'Window to the Soul',
@@ -17,17 +16,14 @@ export const metadata: Metadata = {
 
 export default function WindowToTheSoulShowcasePage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Work', path: '/work' },
           { label: 'Window to the Soul', current: true },
         ]}
-      />
-      <Page>
+      >
         <Content />
-      </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

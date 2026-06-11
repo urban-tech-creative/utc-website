@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 import Content from '@/content/about.mdx'
 import Page from '@/components/Page/Page'
 
@@ -16,16 +16,13 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'About', current: true },
         ]}
-      />
-      <Page>
+      >
       <Content />
-    </Page>
-    </>
+    </BreadcrumbsPage>
   )
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 import Content from '@/content/work/bt-manufacturing-showcase.mdx';
-import Page from '@/components/Page/Page';
 
 export const metadata: Metadata = {
   title: 'BT Manufacturing Showcase',
@@ -17,17 +16,14 @@ export const metadata: Metadata = {
 
 export default function BTManufacturingShowcasePage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Work', path: '/work' },
           { label: 'BT Manufacturing Showcase', current: true },
         ]}
-      />
-      <Page>
+      >
       <Content />
-    </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

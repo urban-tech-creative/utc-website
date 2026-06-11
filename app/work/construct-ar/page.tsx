@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 
 export const metadata: Metadata = {
   title: 'Construct.XR',
@@ -13,21 +13,17 @@ export const metadata: Metadata = {
   alternates: { canonical: '/work/construct-ar' },
 };
 import Content from '@/content/work/construct-ar.mdx';
-import Page from '@/components/Page/Page';
 
 export default function ConstructARPage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Work', path: '/work' },
           { label: 'Construct.XR', current: true },
         ]}
-      />
-      <Page>
+      >
       <Content />
-    </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

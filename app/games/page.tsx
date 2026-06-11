@@ -1,5 +1,5 @@
-import Breadcrumbs from '@/components/Breadcrumbs';
-import Page from '@/components/Page/Page';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
+
 import Heading from '@/components/Heading';
 import { Button } from '@/components/Button';
 import Image from 'next/image';
@@ -37,14 +37,12 @@ function GameCard({ title, description, imageSrc, imageAlt, href }: GameCardProp
 
 export default function GamesPage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Games', current: true },
         ]}
-      />
-      <Page>
+      >
         <Heading level={1}>Web Games</Heading>
         <div className="mt-8">
           <GameCard
@@ -62,7 +60,6 @@ export default function GamesPage() {
             href="https://haifyvsekraftwerk.lovable.app"
           />
         </div>
-      </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

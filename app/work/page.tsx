@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import BreadcrumbsPage from '@/components/BreadcrumbsPage';
 import Heading from '@/components/Heading';
 import NavList from '@/components/Nav/NavList';
-import Page from '@/components/Page/Page';
+
 import { workProjectLinks } from './projectLinks';
 
 export const metadata: Metadata = {
@@ -18,19 +18,16 @@ export const metadata: Metadata = {
 
 export default function WorkPage() {
   return (
-    <>
-      <Breadcrumbs
+      <BreadcrumbsPage
         items={[
           { label: 'Cube', path: '/' },
           { label: 'Work', current: true },
         ]}
-      />
-      <Page>
+      >
       <Heading level={1}>Our Work</Heading>
       <div className="mt-6">
         <NavList links={workProjectLinks} size="desktop" />
       </div>
-    </Page>
-    </>
+    </BreadcrumbsPage>
   );
 }

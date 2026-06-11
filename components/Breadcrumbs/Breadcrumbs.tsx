@@ -7,10 +7,6 @@ interface BreadcrumbsProps {
   items: { label: string; path?: string; current?: boolean }[];
 }
 
-/**
- * Breadcrumb navigation as a molecule: Frame (dark, top-right curve) + nav links.
- * Chevron separators, white text, cyan hover — self-contained visual block.
- */
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
   return (
     <Frame
