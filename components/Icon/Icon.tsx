@@ -48,6 +48,7 @@ import {
   CodeIcon,
   BrowsersIcon,
   PaletteIcon,
+  MaskHappyIcon,
 
   // Communication / news
   NewspaperIcon,
@@ -135,6 +136,7 @@ const iconRegistry = {
   'code': CodeIcon,
   'browsers': BrowsersIcon,
   'palette': PaletteIcon,
+  'mask-happy': MaskHappyIcon,
 
   // Communication / news
   'newspaper': NewspaperIcon,
